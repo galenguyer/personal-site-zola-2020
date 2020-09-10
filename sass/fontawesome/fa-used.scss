@@ -1,0 +1,44 @@
+/*!
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+//@import 'variables'; 
+$fa-font-path:         "../webfonts" !default;
+$fa-font-size-base:    16px !default;
+$fa-font-display:      block !default;
+$fa-css-prefix:        fa !default;
+$fa-version:           "5.13.0" !default;
+$fa-border-color:      #eee !default;
+$fa-inverse:           #fff !default;
+$fa-li-width:          2em !default;
+$fa-fw-width:          (20em / 16);
+$fa-primary-opacity:   1 !default;
+$fa-secondary-opacity: .4 !default;
+
+// Convenience function used to set content property
+@function fa-content($fa-var) {
+  @return unquote("\"#{ $fa-var }\"");
+}
+$fa-var-github: \f09b;
+$fa-var-linkedin: \f08c;
+$fa-var-envelope: \f0e0;
+//end @import 'variables';
+//@import 'icons';
+.#{$fa-css-prefix}-github:before { content: fa-content($fa-var-github); }
+.#{$fa-css-prefix}-linkedin:before { content: fa-content($fa-var-linkedin); }
+.#{$fa-css-prefix}-envelope:before { content: fa-content($fa-var-envelope); }
+//end @import 'icons';
+
+@font-face {
+  font-family: 'Font Awesome 5 Compact';
+  font-style: normal;
+  font-weight: 400;
+  font-display: $fa-font-display;
+  src: url('#{$fa-font-path}/fa-compact.woff2') format('woff2');
+}
+
+.fab, .fas {
+  font-family: 'Font Awesome 5 Compact';
+  font-weight: 400;
+}

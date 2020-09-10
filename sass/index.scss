@@ -4,3 +4,7 @@
 @import "style/navbar";
 @import "style/whoami";
 @import "style/footer";
+
+
+$fa-font-path: "/assets/fa";
+@import "fontawesome/fa-used.scss";
