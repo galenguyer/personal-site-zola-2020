@@ -3,6 +3,7 @@
     padding: 2em 0em 4em 0em;
     text-align: center;
     color: #FFF;
+
     .name {
         padding-bottom: 0.25em;
         text-transform: uppercase;
@@ -11,6 +12,7 @@
         font-weight: 700;
         background: #293136;
         color: #FFF;
+
         a {
             border-bottom: dotted 1px transparent;
             text-decoration: none;
@@ -20,20 +22,24 @@
             -ms-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
             transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
         }
+
         a:hover {
             border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
         }
     }
+
     .description {
         letter-spacing: 0.07em;
         font-size: 1.1em;
         color: rgba(255, 255, 255, 0.5);
     }
 }
+
 @media screen and (max-width: 1070px) {
     .brand {
         margin-top: 0px;
         padding: 0px 0px 3em 0px;
+
         .name {
             font-size: 2.5em;
         }
