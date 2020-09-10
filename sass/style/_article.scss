@@ -1,0 +1,113 @@
+article {
+    position: relative;
+    padding: 6em 6em 2em 6em;
+    background: #3a444a;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+    h1 {
+        padding-bottom: 0.25em;
+        font-size: 2em;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    h3 {
+        padding-bottom: 1em;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .projlink {
+        border-left: 1px solid #8e8f91;
+        padding-left: 6px;
+    }
+
+    p {
+        margin: 1em 0 2em 0;
+    }
+
+    a {
+        -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+        -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+        border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+        color: #bec9cf;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom-color: transparent;
+        color: #ffffff !important;
+    }
+
+    code {
+        background: rgba(255, 255, 255, 0.075);
+        white-space: nowrap;
+        border-radius: 5px;
+        border: solid 0px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        margin: 0 0.25em;
+        padding: 0.25em 0.65em;
+    }
+
+    pre {
+        background: rgba(255, 255, 255, 0.025);
+        border-radius: 5px;
+        white-space: pre-wrap;
+        border: solid 2px rgba(255, 255, 255, 0.125);
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+        margin: 0 0.25em;
+        padding: 0.25em 0.65em;
+    }
+
+    hr {
+        margin-bottom: 2em;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    b {
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    article {
+        padding: 1.5rem;
+
+        h1 {
+            padding: 0px;
+        }
+
+        .projlink {
+            border-left: none;
+            padding-left: 0px;
+            font-size: 0.8em;
+        }
+
+        br {
+            line-height: 0.2rem;
+            display: block;
+            margin: 0.5rem 0;
+        }
+    }
+}

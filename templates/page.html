@@ -5,5 +5,7 @@
 {%- endblock styles %}
 
 {% block content %}
-    {{ page.title | safe }}
+    <article>
+        {{ page.content | safe }}
+    </article>
 {% endblock content %}
