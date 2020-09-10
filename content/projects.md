@@ -1,4 +1,6 @@
 +++
+title = "Projects"
+description = "I do a lot of small projects! These are just a few I'm proud of"
 template = "page.html"
 +++
 
