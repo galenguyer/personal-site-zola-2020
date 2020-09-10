@@ -1,0 +1,48 @@
+.navbar {
+    position: relative;
+    background: #445058;
+    ul {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            padding-left: 0;
+            -moz-transition: background-color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
+            a {
+                display: inline-block;
+                margin: 0;
+                padding: 1.0em 1.6em 1.7em 1.6em;
+                letter-spacing: 0.06em;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.2em;
+                outline: 0;
+                color: rgba(255, 255, 255, 0.75);
+                border-top: 5px solid transparent;
+            }
+        }
+        li:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+    }
+    .active {
+        background: #3a444a;
+        border-top: 4px solid #61a8df;
+        color: #fff;
+        padding-top: 1.0675rem;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .navbar ul li a {
+        padding: 0.8em 1.1em 1.15em 1.1em;
+    }
+    .navbar .active {
+        padding-top: 0.8em;
+    }
+}

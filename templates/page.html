@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block styles -%}
+    <link rel="stylesheet" type="text/css" href="/index.css">
+{%- endblock styles %}
+
+{% block content %}
+    {{ page.title | safe }}
+{% endblock content %}

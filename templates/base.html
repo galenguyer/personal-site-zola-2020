@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    {% block styles %}
+    {% endblock styles %}
+</head>
+
+<body>
+    <div id="container">
+        <header class="header" role="banner">
+            <div class="brand">
+                <h1 class="name">
+                    {%- if current_path == "/" -%}
+                    <span>Galen Guyer</span>
+                    {%- else -%}
+                    <a href="/">Galen Guyer</a>
+                    {%- endif -%}
+                </h1>
+                <span class="description">Full-Stack Software Engineer</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        {% if current_path == "/" -%}
+                        <a class="active">
+                            {%- else -%}
+                            <a href="/">
+                                {%- endif -%}
+                                Home</a>
+                    </li>
+                    <li>
+                        {% if current_path == "/projects/" -%}
+                        <a class="active">
+                            {%- else -%}
+                            <a href="/projects">
+                                {%- endif -%}
+                                Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        {%- block content -%}
+        {%- endblock content %}
+    </div>
+</body>
